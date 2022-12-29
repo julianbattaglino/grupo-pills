@@ -5,7 +5,7 @@ function scroll() {
 	scrollTop = $(window).scrollTop();
 
     // Fixed Header
-	if(scrollTop > 300){
+	if(scrollTop > 1){
 		$('.header, body').addClass('fixed');
 	} else {
 		$('.header, body').removeClass('fixed');
