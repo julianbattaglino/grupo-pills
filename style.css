@@ -29,11 +29,11 @@ CSS Styles Grupo Pills Website
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	min-height: 100vh;
+	min-height: 90vh;
 }
 
 .slider-img-container {
-	height: 100vh;
+	height: 90vh;
 	background-position: center;
 }
 
@@ -77,8 +77,8 @@ h2.banner-title {
 	font-family: "Inter", Sans-serif;
 	font-size: 78px;
 	font-weight: 900;
-	line-height: 0.9em;
-	letter-spacing: 8px;
+	line-height: 1em;
+	letter-spacing: 2px;
 	display: flex;
 	justify-content: center;
 }
@@ -93,15 +93,16 @@ h2.banner-subtitle {
 
 @media (max-width: 769px) {
 	#outer {
-		min-height: 30vh;
+		min-height: 50vh;
 	}
 
-	#slider-img-container {
-		height: 75vh;
+	.slider-img-container {
+		height: 50vh;
 	}
 
 	h2.banner-title {
-		font-size: 48px;
+		font-size: 36px;
+		letter-spacing: 2px;
 	}
 }
 
