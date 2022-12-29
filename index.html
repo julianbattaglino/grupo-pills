@@ -8,12 +8,28 @@
     <meta name="description"
         content="Desarrollamos funcionalidad de espacios que mejoran tu vida cotidiana. Lo logramos construyendo ambientes más amplios que la media del mercado, con espacios de recreación descubiertos o semi cubiertos en todas las unidades funcionales. Y con una constante búsqueda de innovaciones en materiales y procesos que generan como resultado la excelencia del producto final, brindando la confianza de una inversión para toda la vida.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Desarrollos Inmobiliarios, Inmobiliaria, Arquitectura, Edificios, Departamentos, Ambientes, Inversion">
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords"
+        content="Desarrollos Inmobiliarios, Inmobiliaria, Arquitectura, Edificios, Departamentos, Ambientes, Inversion">
+
+    <!-- Bootstrap 5 Css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9c75f56191.js" crossorigin="anonymous"></script>
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Slick slider Css-->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!-- Lightbox2 Css-->
+    <link rel="stylesheet" href="./assets/css/lightbox.css">
+    <!--Main Styles-->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
 </head>
 
 <body class="home">
@@ -116,20 +132,56 @@
         </div>
     </header>
 
-    <img class="intro-banner" src="banner.webp" alt="" >
+    <div class="slick-slider">
+        <div>
+            <!-- Banner 1-->
+            <div id="outer">
+                <div id="slider-img-container">
+                </div>
+            </div>
+
+            <div id="slider-text">
+                <h2 class="banner-title">RAMON</h2>
+                <h2 class="banner-title">FALCON</h2>
+                <h2 class="banner-title">5168</h2>
+                <div class="container-btn-banner">
+                    <a href="#" class="btn btn-dark btn-banner mt-4">VER PROYECTO<span class="arrow-long"></span></a>
+                </div>
+            </div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </div>
 
 
 
 
+
+    <!-- JQUERY 3.6.3-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
         integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="scripts.js"></script>
-
+    <!-- Isotope JS-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slick JS-->
+    <script src="./assets/js/slick.js"></script>
+    <!-- Lightbox2 JS-->
+    <script src="./assets/js/lightbox.js"></script>
+    <!-- Popper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <!-- Site Scripts -->
+    <script src="scripts.js"></script>
+
+
+
 </body>
 
 </html>
