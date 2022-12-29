@@ -104,13 +104,14 @@ h2.banner-subtitle {
 	justify-content: center;
 }
 .btn{
+	font-family: "Inter", Sans-serif;
 	position: relative;
 	padding: 0 32px;
 	line-height: 40px;
 	white-space: nowrap;
 	border-radius: 48px;
 	text-transform: uppercase;
-	font-weight: 800;
+	font-weight: 600;
 }
 .btn:focus{
 	box-shadow: none !important;
@@ -129,7 +130,9 @@ h2.banner-subtitle {
 }
 .btn:hover .arrow-long{
 	width: 36px;
+	height: 22px;
 }
+
 .btn-dark {
 	background: #F3F3F3;
 	border-color: #F3F3F3;
@@ -371,7 +374,7 @@ body {
 }
 
 .header .navigation ul li a {
-	font-family: 'Manrope', sans-serif;
+	font-family: 'Inter', sans-serif;
 	position: relative;
 	display: block;
 	padding: 15px;
