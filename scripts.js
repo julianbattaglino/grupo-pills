@@ -98,8 +98,36 @@ $(document).ready(function () {
 
 	// Slick Init js
 	$('.slick-slider').slick({
-		dots: true, infinite: true, speed: 500, fade: true, cssEase: 'linear'
+		dots: true, 
+		infinite: true, 
+		speed: 500, 
+		fade: true, 
+		cssEase: 'linear'
 	});
 
+	// Isotope Filters Projects Page
+	$('.isotope-grid').isotope({
+		itemSelector: '.grid-item',
+		filter: '*',
+		gutter: 10,
+	});
+
+	// filter items on button click
+	$('.filter-button-group').on('click', 'button', function () {
+		var filterValue = $(this).attr('data-filter');
+		$('.isotope-grid').isotope({ filter: filterValue });
+		$('.filter-button-group').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$('.button-group').each( function( i, buttonGroup ) {
+		var $buttonGroup = $( buttonGroup );
+		$buttonGroup.on( 'click', 'button', function() {
+		  $buttonGroup.find('.is-checked').removeClass('is-checked');
+		  $( this ).addClass('is-checked');
+		});
+	  });
 
 });
+
+
