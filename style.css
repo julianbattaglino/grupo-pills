@@ -782,6 +782,18 @@ h2.subtitle {
 
 /****** Page Projects ******/
 /*Seccion Proyectos*/
+div.page-title-container {
+	padding: 25px;
+	background-color: #2F5DAF;
+}
+h1.page-title {
+	font-family: 'Gotham Black';
+	font-size: 32px;
+	font-weight: 900;
+	letter-spacing: 4px;
+	color: #fff;
+	text-align: center;
+}
 
 article {
 	position: relative;
@@ -795,7 +807,7 @@ article {
 
 section.proyectos {
 	background-color: #f4f4f4;
-	padding-top: 150px;
+	padding-top: 100px;
 }
 
 @media (max-width: 769px) {
@@ -807,6 +819,7 @@ section.proyectos {
 ul.filter-buttons {
 	display: flex;
 	justify-content: center;
+	margin-top: 25px;
 }
 
 div.row-isotope {
