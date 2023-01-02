@@ -25,6 +25,22 @@ CSS Styles Grupo Pills Website
 }
 
 @font-face {
+	font-family: 'Gotham Light';
+	src: url('assets/fonts/Gotham/Gotham-Light.eot');
+	/* IE9 Compat Modes */
+	src: url('assets/fonts/Gotham/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('assets/fonts/Gotham/Gotham-Light.otf') format('otf'),
+		/* Legacy iOS */
+		url('assets/fonts/Gotham/Gotham-Light.woff') format('woff'),
+		/* Pretty Modern Browsers */
+		url('assets/fonts/Gotham/Gotham-Light.woff2') format('woff2'),
+		/* Pretty Modern Browsers */
+		url('assets/fonts/Gotham/Gotham-Light.ttf') format('truetype');
+	/* Safari, Android, iOS */
+}
+
+@font-face {
 	font-family: 'Gotham Medium';
 	src: url('assets/fonts/Gotham/Gotham-Medium.eot');
 	/* IE9 Compat Modes */
@@ -97,8 +113,9 @@ a:focus {
 }
 
 p {
-	font-family: 'Gotham Medium';
+	font-family: 'Gotham Light';
 	color: #333;
+	font-weight: 600;
 	font-size: 16px;
 	line-height: 1.8em;
 }
@@ -116,11 +133,12 @@ h1 {
 }
 
 h2 {
-	font-family: 'Gotham Medium';
+	font-family: 'Gotham Light';
+	color: #333;
+	font-weight: 600;
 	font-size: 22px;
 	margin-block-start: 0 !important;
 	margin-block-end: 0 !important;
-	color: #333;
 }
 
 h3 {
@@ -485,6 +503,7 @@ strong {
 	padding: 10px 15px;
 	font-size: 14px;
 	border-bottom: solid 1px #8b8b8b;
+	padding-left: 50px;
 }
 
 .header .navigation .menu li.open-submenu {
@@ -750,9 +769,9 @@ span.underline-nice {
 }
 
 h2.subtitle {
-	font-family: 'Gotham Medium';
+	font-family: 'Gotham Light';
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 600;
 }
 
 @media (max-width: 769px) {
@@ -812,12 +831,12 @@ article {
 
 section.proyectos {
 	background-color: #f4f4f4;
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
 @media (max-width: 769px) {
 	section.proyectos {
-		padding-top: 100px;
+		padding-top: 75px;
 	}
 }
 
