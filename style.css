@@ -788,11 +788,16 @@ div.page-title-container {
 }
 h1.page-title {
 	font-family: 'Gotham Black';
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 900;
 	letter-spacing: 4px;
 	color: #fff;
 	text-align: center;
+}
+@media (max-width: 769px){
+	h1.page-title {
+		font-size: 18px;
+	}
 }
 
 article {
