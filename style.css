@@ -112,6 +112,11 @@ a:focus {
 	color: rgb(47,93,175, 0.9);
 }
 
+b {
+	font-family: 'Gotham Black';
+	text-decoration: underline;
+}
+
 p {
 	font-family: 'Gotham Light';
 	color: #333;
@@ -352,7 +357,7 @@ strong {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height: 75px;
+	min-height: 75px;	
 	background: #f3f3f3;
 	transition: 0.3s all;
 	z-index: 99;
@@ -485,7 +490,7 @@ strong {
 .header .navigation ul li>a:hover:after,
 .header .navigation ul li.open-submenu>a:after,
 .header .navigation ul li.current-menu-item>a:after {
-	color: #315F9D;
+	color: #2F5DAF;
 }
 
 .header .navigation ul li>a:hover:after {
@@ -647,7 +652,7 @@ strong {
 
 	.header .navigation .menu .sub-menu li.current-menu-item,
 	.header .navigation .menu .sub-menu li:hover {
-		background: #315F9D;
+		background: #2F5DAF;
 	}
 
 
@@ -677,6 +682,99 @@ strong {
 	margin-top: 75px;
 }
 
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'FontAwesome';
+    font-size: 40px;
+  font-weight: bold;
+    line-height: 1;
+
+    opacity: .75;
+    color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  transition: opacity 0.25s;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+[dir='rtl'] .slick-prev {
+    right: 0;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: '\f104';
+}
+
+[dir='rtl'] .slick-prev:before {
+    content: '\f105';
+}
+
+.slick-next {
+    right: 0;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: 0;
+}
+
+.slick-next:before {
+    content: '\f054';
+}
+
+[dir='rtl'] .slick-next:before {
+    content: '\f104';
+}
+
+/* Dots */
 .slick-dots {
 	position: absolute;
 	width: 100%;
@@ -758,7 +856,7 @@ strong {
 }
 
 
-/* Home Section 1 */
+/* Home Section Intro */
 span.underline-nice {
 	background-image: linear-gradient(120deg, rgba(49, 95, 157, 0.1) 0%, rgba(49, 95, 157, 0.1) 100%);
 	background-repeat: no-repeat;
@@ -799,6 +897,16 @@ h2.subtitle {
 	}
 }
 
+/* Home Section Obras Terminadas */
+.bg-light-grey{
+	background-color: #f7f7f7;
+}
+img.content-fit {
+	width: 100%;
+	object-fit: cover;
+}
+
+
 /****** Page Projects ******/
 /*Seccion Proyectos*/
 div.page-title-container {
@@ -819,19 +927,9 @@ h1.page-title {
 	}
 }
 
-article {
-	position: relative;
-	overflow: hidden;
-	padding: 1rem;
-	-webkit-box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
-	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
-	margin-bottom: 20px;
-}
-
 section.proyectos {
 	background-color: #f4f4f4;
-	padding-top: 75px;
+	padding-top: 85px;
 }
 
 @media (max-width: 769px) {
@@ -879,6 +977,16 @@ button.filter-button:hover {
 		font-size: 12px;
 	}
 }
+article {
+	position: relative;
+	overflow: hidden;
+	padding: 1rem;
+	-webkit-box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
 
 img.img-item {
 	width: 100%;
@@ -903,3 +1011,7 @@ p.project-extract {
 	color: #222222;
 	font-weight: 400;
 }
+
+
+
+

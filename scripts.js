@@ -96,6 +96,10 @@ $(document).ready(function () {
 		scroll();
 	});
 
+	$(window).on("scroll", function () {
+		AOS.init();
+	});
+
 	// Slick Init js
 	$('.slick-slider').slick({
 		dots: true, 
