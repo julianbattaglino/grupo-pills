@@ -91,9 +91,19 @@ CSS Styles Grupo Pills Website
 
 
 /* Global Styles */
+
+/* Spacing */
+.pt-75 {
+	padding-top: 75px;
+}
+.pt-85 {
+	padding-top: 85px;
+}
+
 ol,
 ul {
 	padding-left: 0;
+	list-style: none;
 }
 
 a,
@@ -109,12 +119,15 @@ a:focus {
 }
 
 .blue {
-	color: rgb(47,93,175, 0.9);
+	color: rgb(47, 93, 175, 0.9);
+}
+
+.bkg-light-grey {
+	background-color: #f4f4f4;
 }
 
 b {
 	font-family: 'Gotham Black';
-	text-decoration: underline;
 }
 
 p {
@@ -133,8 +146,16 @@ p {
 }
 
 h1 {
-	font-size: 26px;
+	font-family: 'Gotham Medium';
+	font-size: 32px;
+	font-weight: 600;
 	color: #333;
+}
+
+@media (max-width: 769px) {
+	h1 {
+		font-size: 28px;
+	}
 }
 
 h2 {
@@ -184,12 +205,13 @@ strong {
 	max-width: 100%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) {
 	.container {
-		max-width: 1440px;
-		padding: 0 70px;
+		padding: 0 75px;
 	}
 }
+
+
 
 @media screen and (min-width: 1200px) {
 	.col-lg-5-2 {
@@ -357,7 +379,7 @@ strong {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height: 75px;	
+	min-height: 75px;
 	background: #f3f3f3;
 	transition: 0.3s all;
 	z-index: 99;
@@ -367,7 +389,7 @@ strong {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	width: 275px;
+	width: 200px;
 	padding: 8px 0;
 	transition: 0.1s all;
 	z-index: 2;
@@ -678,100 +700,97 @@ strong {
 /* PAGINA HOME */
 
 /* Slick Carrousel Styles*/
-.slick-slider {
-	margin-top: 75px;
-}
 
 /* Arrows */
 .slick-prev,
 .slick-next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 48px;
-    height: 48px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	display: block;
+	width: 48px;
+	height: 48px;
+	padding: 0;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
 }
 
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
-    color: transparent;
-    outline: none;
-    background: transparent;
+	color: transparent;
+	outline: none;
+	background: transparent;
 }
 
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
-    opacity: 1;
+	opacity: 1;
 }
 
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
-    opacity: .25;
+	opacity: .25;
 }
 
 .slick-prev:before,
 .slick-next:before {
-    font-family: 'FontAwesome';
-    font-size: 40px;
-  font-weight: bold;
-    line-height: 1;
+	font-family: 'FontAwesome';
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 1;
 
-    opacity: .75;
-    color: #fff;
+	opacity: .75;
+	color: #fff;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  transition: opacity 0.25s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: opacity 0.25s;
 }
 
 .slick-prev {
-    left: 0;
-    z-index: 1;
+	left: 0;
+	z-index: 1;
 }
 
 [dir='rtl'] .slick-prev {
-    right: 0;
-    left: auto;
+	right: 0;
+	left: auto;
 }
 
 .slick-prev:before {
-    content: '\f104';
+	content: '\f104';
 }
 
 [dir='rtl'] .slick-prev:before {
-    content: '\f105';
+	content: '\f105';
 }
 
 .slick-next {
-    right: 0;
+	right: 0;
 }
 
 [dir='rtl'] .slick-next {
-    right: auto;
-    left: 0;
+	right: auto;
+	left: 0;
 }
 
 .slick-next:before {
-    content: '\f054';
+	content: '\f054';
 }
 
 [dir='rtl'] .slick-next:before {
-    content: '\f104';
+	content: '\f104';
 }
 
 /* Dots */
@@ -805,7 +824,7 @@ strong {
 }
 
 .slider-img-2 {
-	background-image: url(./assets/img/joaquin-v-gonzalez-1367.webp);
+	background-image: url(./assets/img/projects/details-banners/jv-gonzalez-1367-banner.webp);
 }
 
 .slider-img-container:before {
@@ -898,9 +917,10 @@ h2.subtitle {
 }
 
 /* Home Section Obras Terminadas */
-.bg-light-grey{
+.bg-light-grey {
 	background-color: #f7f7f7;
 }
+
 img.content-fit {
 	width: 100%;
 	object-fit: cover;
@@ -908,11 +928,13 @@ img.content-fit {
 
 
 /****** Page Projects ******/
+
 /*Seccion Proyectos*/
 div.page-title-container {
 	padding: 25px;
 	background-color: #2F5DAF;
 }
+
 h1.page-title {
 	font-family: 'Gotham Black';
 	font-size: 24px;
@@ -921,15 +943,15 @@ h1.page-title {
 	color: #fff;
 	text-align: center;
 }
-@media (max-width: 769px){
+
+@media (max-width: 769px) {
 	h1.page-title {
 		font-size: 18px;
 	}
 }
 
-section.proyectos {
+div.proyectos {
 	background-color: #f4f4f4;
-	padding-top: 85px;
 }
 
 @media (max-width: 769px) {
@@ -964,8 +986,9 @@ button.filter-button {
 	border-radius: 50px;
 	border: none;
 	padding: 5px 15px;
-	transition: all  0.5s;
+	transition: all 0.5s;
 }
+
 button.filter-button:hover {
 	background-color: #2F5DAF;
 	color: #fff;
@@ -977,6 +1000,7 @@ button.filter-button:hover {
 		font-size: 12px;
 	}
 }
+
 article {
 	position: relative;
 	overflow: hidden;
@@ -1012,6 +1036,67 @@ p.project-extract {
 	font-weight: 400;
 }
 
+/*** Project Detail Global Styles ***/
+span.small-text {
+	font-size: 18px;
+	font-weight: 300;
+}
 
+span.fancy-underline {
+	background-image: linear-gradient(120deg, rgba(158, 215, 224, 0.8) 0%, rgba(158, 215, 224, 0.8) 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 0.4em;
+	background-position: 0 100%;
+	transition: background-size 0.25s ease-in;
+	width: fit-content;
+}
 
+.img-full {
+	width: 100%;
+}
 
+h3.center-subtitle {
+	font-family: 'Gotham Light', sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	color: #333;
+	text-align: center;
+}
+
+@media (max-width: 796px) {
+	h3.center-subtitle {
+		font-size: 28px;
+	}
+}
+
+/*** Project Detail Slick Gallery Images ***/
+.slick-slide img {
+    height: auto;
+    max-width: 100%;
+}
+
+span.lb-number {
+  display: none !important;
+}
+
+/*** Project Detail Background Images Global Styles ***/
+.bkg-project-detail {
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@media (max-width: 769px) {
+	.bkg-project-detail {
+		height: 30vh;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+/*** Joaquin V Gonzalez 1367 Project Detail ***/
+.bkg-jv-gonzalez {
+	background-image: url(assets/img/projects/details-banners/jv-gonzalez-1367-banner.webp);
+}
