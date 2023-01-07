@@ -94,7 +94,10 @@ CSS Styles Grupo Pills Website
 
 /* Spacing */
 .pt-75 {
-	padding-top: 75px;
+	padding-top: 75px !important;
+}
+.pb-75 {
+	padding-bottom: 75px !important;
 }
 .pt-85 {
 	padding-top: 85px;
@@ -122,6 +125,10 @@ a:focus {
 	color: rgb(47, 93, 175, 0.9);
 }
 
+.dark-grey {
+	color: #484A57;
+}
+
 .bkg-light-grey {
 	background-color: #f4f4f4;
 }
@@ -143,6 +150,10 @@ p {
 		font-size: 14px;
 		line-height: 1.6em;
 	}
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0 !important;
 }
 
 h1 {
@@ -915,6 +926,35 @@ h2.subtitle {
 		letter-spacing: 2px;
 	}
 }
+
+/* Home Section Specificaciones */
+.spec-container {
+	border-bottom: solid 1px #333;
+	padding: 15px;
+}
+.spec-title-container {
+	display: flex;
+    align-items: center;
+}
+
+.spec-number {
+	font-family: 'Gotham Medium';
+	font-size: 36px;
+    font-weight: 600;
+	color: #484A57;
+	padding-right: 15px;
+}
+.spec-title {
+	font-family: 'Gotham Medium';
+	font-size: 18px;
+    font-weight: 600;
+	color: #484A57;
+}
+
+.spec-text {
+	margin-bottom: 0 !important;
+}
+
 
 /* Home Section Obras Terminadas */
 .bg-light-grey {
