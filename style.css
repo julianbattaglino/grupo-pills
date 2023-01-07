@@ -96,9 +96,11 @@ CSS Styles Grupo Pills Website
 .pt-75 {
 	padding-top: 75px !important;
 }
+
 .pb-75 {
 	padding-bottom: 75px !important;
 }
+
 .pt-85 {
 	padding-top: 85px;
 }
@@ -134,7 +136,7 @@ a:focus {
 }
 
 b {
-	font-family: 'Gotham Black';
+	font-family: 'Gotham Bold';
 }
 
 p {
@@ -152,8 +154,19 @@ p {
 	}
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 0 !important;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0 !important;
 }
 
 h1 {
@@ -245,6 +258,10 @@ strong {
 
 .border-top-black {
 	border-top: solid 1px #8b8b8b;
+}
+
+.border-top-dark-grey {
+	border-top: solid 1px #484A57;
 }
 
 @media (min-width: 1200px) {
@@ -932,22 +949,24 @@ h2.subtitle {
 	border-bottom: solid 1px #333;
 	padding: 15px;
 }
+
 .spec-title-container {
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
 
 .spec-number {
 	font-family: 'Gotham Medium';
 	font-size: 36px;
-    font-weight: 600;
+	font-weight: 600;
 	color: #484A57;
 	padding-right: 15px;
 }
+
 .spec-title {
 	font-family: 'Gotham Medium';
 	font-size: 18px;
-    font-weight: 600;
+	font-weight: 600;
 	color: #484A57;
 }
 
@@ -1111,12 +1130,12 @@ h3.center-subtitle {
 
 /*** Project Detail Slick Gallery Images ***/
 .slick-slide img {
-    height: auto;
-    max-width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 span.lb-number {
-  display: none !important;
+	display: none !important;
 }
 
 /*** Project Detail Background Images Global Styles ***/
@@ -1139,4 +1158,176 @@ span.lb-number {
 /*** Joaquin V Gonzalez 1367 Project Detail ***/
 .bkg-jv-gonzalez {
 	background-image: url(assets/img/projects/details-banners/jv-gonzalez-1367-banner.webp);
+}
+
+
+/*Footer*/
+footer {
+	background-color: #f3f3f3;
+	padding: 50px;
+	color: #484a57;
+	padding: 75px 75px 25px 75px;
+}
+
+hr.footer-separator {
+	border-top: 1px solid #484a57;
+}
+
+
+footer img.logo {
+	width: 150px;
+}
+
+ul.footer {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+
+u.footer-contact {
+	display: block !important;
+}
+
+li.footer-item a {
+	font-family: 'Gotham Medium', sans-serif;
+	font-size: 16px;
+	color: #484a57 !important;
+	font-weight: 600;
+	padding: 0 20px 0 0;
+	text-decoration: none;
+}
+
+i.footer-icon {
+	padding-left: 15px;
+}
+
+footer i.fa-brands.fa-instagram {
+	color: #484a57 !important;
+	padding-left: 10px;
+}
+
+footer i.fa-brands.fa-facebook {
+	color: #484a57 !important;
+	padding-left: 10px;
+}
+
+li.copyrigth {
+	font-family: 'Gotham Light', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+p.powered {
+	font-family: 'Gotham Medium', sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	color: #484a57;
+}
+
+img.powered-logo {
+	width: 15px;
+	padding-top: 1rem;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+	/*Footer*/
+	footer {
+		padding: 75px 15px 25px 15px;
+	}
+
+	div.footer-item {
+		display: flex;
+		justify-content: center;
+	}
+
+	ul.footer {
+		display: block;
+		padding-left: 0;
+		text-align: center;
+	}
+
+	div.footer-rrss {
+		margin-top: 10px;
+	}
+
+	i.fa-brands.fa-instagram {
+		padding-left: 0 !important;
+	}
+
+	i.fa-brands.fa-facebook {
+		padding-left: 10px;
+	}
+
+	p.powered {
+		text-align: center;
+	}
+
+	img.powered-logo {
+		margin: auto;
+		display: block;
+	}
+}
+
+/**************** Media querie Tablets ****************/
+@media (min-width: 767px) and (max-width: 1199px) {
+
+	/*Footer*/
+	div.footer-item {
+		display: flex;
+		justify-content: center;
+	}
+
+	ul.footer {
+		display: block;
+		padding-left: 0;
+		text-align: center;
+	}
+
+	i.fa-brands.fa-instagram {
+		padding-left: 0 !important;
+	}
+
+	div.footer-rrss {
+		margin-top: 10px;
+	}
+
+	p.powered {
+		text-align: center;
+	}
+
+	img.powered-logo {
+		margin: auto;
+		display: block;
+	}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+	li.footer-item a {
+		font-size: 12px;
+		padding: 0 4px;
+	}
+
+	li.copyrigth {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 1200px) {
+	li.footer-item a {
+		padding: 0 !important;
+	}
+
+	li.copyrigth {
+		padding-top: 1rem;
+	}
+	ul.footer-contact {
+		text-align: center !important;
+	}
+
 }
