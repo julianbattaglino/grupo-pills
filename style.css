@@ -991,7 +991,7 @@ img.content-fit {
 /*Seccion Proyectos*/
 div.page-title-container {
 	padding: 25px;
-	background-color: #2F5DAF;
+	background-color: rgb(47, 93, 175, 0.9);
 }
 
 h1.page-title {
@@ -1114,16 +1114,19 @@ span.fancy-underline {
 	width: 100%;
 }
 
-h3.center-subtitle {
+h3.subtitle {
 	font-family: 'Gotham Light', sans-serif;
 	font-size: 32px;
 	font-weight: 600;
 	color: #333;
-	text-align: center;
+}
+
+#map { 
+	height: 75vh;
 }
 
 @media (max-width: 796px) {
-	h3.center-subtitle {
+	span.fancy-underline {
 		font-size: 28px;
 	}
 }
@@ -1191,7 +1194,7 @@ u.footer-contact {
 
 li.footer-item a {
 	font-family: 'Gotham Medium', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	color: #484a57 !important;
 	font-weight: 600;
 	padding: 0 20px 0 0;
