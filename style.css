@@ -1112,6 +1112,7 @@ span.fancy-underline {
 
 .img-full {
 	width: 100%;
+	border-radius: 4px;
 }
 
 h3.subtitle {
@@ -1127,7 +1128,7 @@ h3.subtitle {
 
 @media (max-width: 796px) {
 	span.fancy-underline {
-		font-size: 28px;
+		font-size: 20px;
 	}
 }
 
@@ -1332,5 +1333,10 @@ img.powered-logo {
 	ul.footer-contact {
 		text-align: center !important;
 	}
+
+	h3.subtitle {
+		font-size: 20px;
+	}
+	
 
 }
