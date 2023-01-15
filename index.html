@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <!-- Lightbox2 Css-->
     <link rel="stylesheet" href="./assets/css/lightbox.css">
+    <!-- Lefleat Css-->
+    <link rel="stylesheet" href="./assets/css/leaflet.css" />
     <!--Main Styles-->
     <link rel="stylesheet" href="style.css">
 
@@ -54,28 +56,37 @@
                 </li>
 
                 <li class="menu-item menu-item-has-children">
-                    <a href="/projects.html">Proyectos</a>
+                    <a href="projects.html">Proyectos</a>
                     <ul class="sub-menu">
                         <li class="menu-item">
-                            <a class="border-top-black" href="/projects.html">Ver todos +</a>
+                            <a class="border-top-black" href="projects.html">Ver todos +</a>
                         </li>
                         <li class="menu-item">
-                            <a href="jv-gonzalez-1367.html">Joaquin V Gonzalez 1367</a>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="#">Miralla 316</a>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="#">Ramon Falcon 5168</a>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="#">Ramon Falcon 5840</a>
+                            <a href="./project-detail/araujo-149.html">Araujo 149</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Oliden 1275</a>
+                            <a href="project-detail/jv-gonzalez-1367.html">Joaquin V Gonzalez 1367</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">Roma 635</a>
+                            <a href="./project-detail/oliden-1275.html">Oliden 1275</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./project-detail/ramon-falcon-5840.html">Ramon Falcon 5840</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="./project-detail/lascano-6031.html">Lascano 6031</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="./project-detail/miralla-316.html">Miralla 316</a>
+                        </li>
+                        <li class="menu-item ">
+                            <a href="./project-detail/ramon-falcon-5117.html">Ramon Falcon 5117</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./project-detail/ramon-falcon-5168.html">Ramon Falcon 5168</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="project-detail/roma-635.html">Roma 635</a>
                         </li>
                     </ul>
                 </li>
@@ -90,7 +101,7 @@
             </ul>
 
             <ul class="socialmedia list-unstyled">
-                <li class="instagram"><a href="#" target="_blank">
+                <li class="instagram"><a href="https://www.instagram.com/grupo.pills/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
                             <path
@@ -99,7 +110,8 @@
                         </svg>
                         <!--<i class="fa fa-instagram"></i>-->
                     </a></li>
-                <li class="facebook"><a href="#" target="_blank">
+                <li class="facebook"><a href="https://www.facebook.com/people/Grupo-Pills/100063672235881/"
+                        target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
@@ -219,7 +231,7 @@
             <div class="col-12 spec-container mt-3" data-aos="fade-up">
                 <div class="spec-title-container">
                     <h4 class="spec-number">1</h4>
-                    <h3 class="spec-title">Aire condicionado</h3>
+                    <h3 class="spec-title">Aire acondicionado</h3>
                 </div>
                 <p class="spec-text">Aire acondicionado instalado en todos los ambientes</p>
 
@@ -284,9 +296,10 @@
 
     <!--Section Obras Finalizadas-->
     <div class="page-title-container">
-        <h1 class="page-title" data-aos="fade-up">OBRAS FINALIZADAS</h1>
+        <h1 class="page-title" data-aos="fade-up">CONOCE NUESTROS PROYECTOS</h1>
     </div>
-    <div class="section-container">
+
+    <!--div class="section-container">
         <div class="row">
 
             <div class="col-12 col-md-4">
@@ -362,7 +375,7 @@
 
         </div>
 
-    </div>
+    </div-->
 
 
     <!--div class="page-title-container">
@@ -450,6 +463,10 @@
 
     </div-->
 
+    <!-- Lefleat Map -->
+    <div id="map" data-aos="fade-up"></div>
+
+
 
     <footer>
         <div class="footer-container">
@@ -469,14 +486,14 @@
 
                 <div class="col-12 col-xl-6 pb-3">
                     <ul class="footer">
-                        <li class="footer-item"><a href="#">INICIO</a></li>
-                        <li class="footer-item"><a href="#">PROYECTOS</a></li>
+                        <li class="footer-item"><a href="/">INICIO</a></li>
+                        <li class="footer-item"><a href="./projects.html">PROYECTOS</a></li>
                         <li class="footer-item"><a href="#">NOSOTROS</a></li>
                         <li class="footer-item"><a href="#">CONTACTO</a></li>
                         <div class="footer-rrss">
-                            <a href="https://www.instagram.com/arcos.4259/" target="_blank"><i
+                            <a href="https://www.instagram.com/grupo.pills/" target="_blank"><i
                                     class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com/Arcos-4259-108434898537603" target="_blank"><i
+                            <a href="https://www.facebook.com/people/Grupo-Pills/100063672235881/" target="_blank"><i
                                     class="fa-brands fa-facebook footer-social"></i></a>
                         </div>
                     </ul>
@@ -484,9 +501,17 @@
 
                 <div class="col-12">
                     <ul class="footer-contact">
-                        <p class="">Ramón Falcón 5117, Departamento 8, CABA</p>
-                        <p class="">ventas@grupopills.com.ar</p>
-                        <p class="">+54 9 11 23494049</p>
+                        <a href="https://www.google.com.ar/maps/place/Cnel.+Ram%C3%B3n+L.+Falc%C3%B3n+5117,+C1407GTK+CABA/@-34.6386535,-58.5018064,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc9b0f90372f1:0x291cbf71437ef511!8m2!3d-34.6386535!4d-58.4996177"
+                            target="_blank">
+                            <p class="">Ramón Falcón 5117, Departamento 8, CABA</p>
+                        </a>
+                        <a href="mailto:ventas@grupopills.com.ar" target="_blank">
+                            <p class="">ventas@grupopills.com.ar</p>
+                        </a>
+                        <a href="https://wa.me/5491123494049?text=Hola%20Grupo%20Pills,%20me%20contacto%20desde%20www.grupopills.com.ar,%20busco%20info%20sobre%20los%20proyectos"
+                            target="_blank">
+                            <p class="">+54 9 11 23494049</p>
+                        </a>
                     </ul>
                 </div>
 
@@ -519,6 +544,8 @@
     <script src="./assets/js/slick.js"></script>
     <!-- Lightbox2 JS-->
     <script src="./assets/js/lightbox.js"></script>
+    <!-- Lefleat JS-->
+    <script src="./assets/js/leaflet.js"></script>
     <!-- Popper JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -529,6 +556,77 @@
         crossorigin="anonymous"></script>
     <!-- Site Scripts -->
     <script src="scripts.js"></script>
+
+    <script>
+        // Lefleat Map Init
+        let map = L.map('map', {
+            scrollWheelZoom: false
+        }
+        ).setView([-34.63, -58.46], 13);
+
+        // Lefleat Markers
+        let marker1 = L.marker([-34.639838717395065, -58.50701996133773]).addTo(map);
+        let marker2 = L.marker([-34.620322649677604, -58.48791895499674]).addTo(map);
+        let marker3 = L.marker([-34.65084021465816, -58.506695702142665]).addTo(map);
+        let marker4 = L.marker([-34.64000059389059, -58.509175444469825]).addTo(map);
+        let marker5 = L.marker([-34.62856343079707, -58.51939730214345]).addTo(map);
+        let marker6 = L.marker([-34.64202360120890, -58.50845187499704]).addTo(map);
+        let marker7 = L.marker([-34.63850341820513, -58.4996284309797]).addTo(map);
+        let marker8 = L.marker([-34.63886958122619, -58.50009258329132]).addTo(map);
+        let marker9 = L.marker([-34.630177, -58.5209901]).addTo(map);
+
+        // Lefleat Popups
+        marker1.bindPopup(`
+        <b>Araujo 149</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/araujo-149.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        marker2.bindPopup(`
+        <b>Joaquin V Gonzalez 1367</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/jv-gonzalez-1367.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `).openPopup();
+
+        marker3.bindPopup(`
+        <b>Oliden 1275</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/oliden-1275.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        marker4.bindPopup(`
+        <b>Ramon Falcon 5840</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/ramon-falcon-5840.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        marker5.bindPopup(`
+        <b>Lascano 6031</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/lascano-6031.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        marker6.bindPopup(`
+        <b>Miralla 316</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/miralla-316.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        marker7.bindPopup(`
+        <b>Ramón L. Falcón 5117</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/ramon-falcon-5117.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        marker8.bindPopup(`
+        <b>Ramón L. Falcón 5168</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/ramon-falcon-5168.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        marker9.bindPopup(`
+        <b>Roma 365</b><br>Departamento PH 4 Ambientes, Monte Castro.
+        <a href="project-detail/roma-635.html"><button class="popup-btn">Ver proyecto</button></a>        
+        `);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+    </script>
 
 
 
