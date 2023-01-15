@@ -102,10 +102,10 @@ $(document).ready(function () {
 
 	// Slick Init js
 	$('.slick-slider').slick({
-		dots: true, 
-		infinite: true, 
-		speed: 500, 
-		fade: true, 
+		dots: true,
+		infinite: true,
+		speed: 500,
+		fade: true,
 		cssEase: 'linear'
 	});
 
@@ -118,32 +118,32 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		responsive: [
-		  {
-			breakpoint: 1200,
-			settings: {
-			  slidesToShow: 3,
-			  infinite: true,
-			  dots: true
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+				}
 			}
-		  },
-		  {
-			breakpoint: 1024,
-			settings: {
-			  slidesToShow: 2,
-			}
-		  },
-		  {
-			breakpoint: 767,
-			settings: {
-			  slidesToShow: 1,
-			}
-		  }
-		  // You can unslick at a given breakpoint now by adding:
-		  // settings: "unslick"
-		  // instead of a settings object
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
 		]
-		
-	  });    
+
+	});
 
 	// Isotope Filters Projects Page
 	$('.isotope-grid').isotope({
@@ -160,13 +160,23 @@ $(document).ready(function () {
 		$(this).addClass('active');
 	});
 
-	$('.button-group').each( function( i, buttonGroup ) {
-		var $buttonGroup = $( buttonGroup );
-		$buttonGroup.on( 'click', 'button', function() {
-		  $buttonGroup.find('.is-checked').removeClass('is-checked');
-		  $( this ).addClass('is-checked');
+	$('.button-group').each(function (i, buttonGroup) {
+		var $buttonGroup = $(buttonGroup);
+		$buttonGroup.on('click', 'button', function () {
+			$buttonGroup.find('.is-checked').removeClass('is-checked');
+			$(this).addClass('is-checked');
 		});
-	  });
+	});
+
+	// Lightbox2.js Options
+	lightbox.option({
+		'disableScrolling': true,
+		'alwaysShowNavOnTouchDevices': true,
+		'wrapAround': true
+
+
+	})
+
 
 });
 
