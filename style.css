@@ -985,6 +985,23 @@ img.content-fit {
 	object-fit: cover;
 }
 
+/* Home Section Lefleat Map Multiple Markers Projects*/
+.popup-btn {
+	background-color: #2F5DAF;
+	color: #fff;
+	padding: 5px 15px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	border: none;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
+
+
 
 /****** Page Projects ******/
 
@@ -1163,6 +1180,28 @@ span.lb-number {
 .bkg-jv-gonzalez {
 	background-image: url(assets/img/projects/details-banners/jv-gonzalez-1367-banner.webp);
 }
+
+/*** Roma 535 Project Detail ***/
+.bkg-roma-635 {
+	background-image: url(assets/img/projects/details-banners/roma-635-banner.webp);
+}
+
+/*** Roma 535 Project Detail ***/
+.bkg-lascano-6031 {
+	background-image: url(assets/img/projects/details-banners/lascano-6031-banner.webp);
+}
+
+/*** Roma 535 Project Detail ***/
+.bkg-rm-falcon-5840 {
+	background-image: url(assets/img/projects/details-banners/ramon-falcon-5840-banner.webp);
+}
+
+/*** Roma 535 Project Detail ***/
+.bkg-rm-falcon-5168 {
+	background-image: url(assets/img/projects/details-banners/rm-falcon-5168-banner.webp);
+}
+
+
 
 
 /*Footer*/
