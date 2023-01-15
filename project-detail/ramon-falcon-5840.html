@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grupo Pills - Ramon Falcon 5840</title>
+    <meta name="description"
+        content="Departamento de 4 ambientes ubicado en el barrio de Monte Castro, a estrenar, luminoso, disposición contrafrente pb, con patio y balcón con parrilla, 3 dormitorios, 1 en suite con vestidor, interiores de placard y ventanas de pvc doble vidrio con persianas eléctricas, 2 baños y 1 toilette con griferias fv, inodoro y bidet ferrum, cocina equipada con anafe, horno elevado, heladera y lavaplatos panelable, muebles a medida y mesdas de silestone, el living comedor cuenta con domótica, ventanal de pvc con acceso al patio, la puerta de ingreso al departamento cuenta con cerradura biométrica, todos los ambientes con aire acondicionado y radiadores.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="Desarrollos Inmobiliarios, Inmobiliaria, Arquitectura, Edificios, Departamentos, Ambientes, Inversion">
+
+    <!-- Bootstrap 5 Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9c75f56191.js" crossorigin="anonymous"></script>
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Slick slider Css-->
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <!-- Lightbox2 Css-->
+    <link rel="stylesheet" href="../assets/css/lightbox.css">
+    <!-- Lefleat Css-->
+    <link rel="stylesheet" href="../assets/css/leaflet.css" />
+    <!--Main Styles-->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body class="home">
+
+    <header class="header">
+        <div class="container">
+
+            <a href="/" class="logo">
+                <img src="../assets/img/logo-horizontal.svg" alt="" class="logo">
+            </a>
+
+            <div class="nav-menu" data-open="menu">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navigation">
+
+                <ul class="menu list-unstyled">
+                    <li class="menu-item ">
+                        <a href="/">Inicio</a>
+                    </li>
+
+                    <li class="menu-item menu-item-has-children">
+                        <a href="../projects.html">Proyectos</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a class="border-top-black" href="../projects.html">Ver todos +</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../project-detail/araujo-149.html">Araujo 149</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../project-detail/jv-gonzalez-1367.html">Joaquin V Gonzalez 1367</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../project-detail/oliden-1275.html">Oliden 1275</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../project-detail/ramon-falcon-5840.html">Ramon Falcon 5840</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="../project-detail/lascano-6031.html">Lascano 6031</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="../project-detail/miralla-316.html">Miralla 316</a>
+                            </li>
+                            <li class="menu-item ">
+                                <a href="../project-detail/ramon-falcon-5117.html">Ramon Falcon 5117</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../project-detail/ramon-falcon-5168.html">Ramon Falcon 5168</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../project-detail/roma-635.html">Roma 635</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">Nosotros</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+
+                <ul class="socialmedia list-unstyled">
+                    <li class="instagram"><a href="https://www.instagram.com/grupo.pills/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                                </path>
+                            </svg>
+                            <!--<i class="fa fa-instagram"></i>-->
+                        </a></li>
+                    <li class="facebook"><a href="https://www.facebook.com/people/Grupo-Pills/100063672235881/"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                                </path>
+                            </svg>
+                            <!--<i class="fa fa-facebook"></i>-->
+                        </a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Detail Project Intro-->
+    <div class="pt-85 bkg-light-grey">
+
+        <div class="bkg-project-detail bkg-rm-falcon-5840">
+        </div>
+
+        <div class="section-container">
+
+            <div class="row pt-2 pb-2 d-flex align-items-center">
+
+                <div class="col-12 col-xl-6">
+                    <h1 class="blue">Ramon Falcon 5840<span class="small-text"></span></h1>
+                    <h2 class="subtitle pb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis pharetra dolor finibus
+                        facilisis. Proin quis magna est. Duis imperdiet volutpat purus, non dapibus lorem pulvinar at.
+                        Sed vitae eros leo. Aenean nec dignissim nisl. Pellentesque scelerisque pharetra enim, eget
+                        viverra mauris auctor sed. Nullam sit amet libero vel ex facilisis iaculis id vitae ligula.
+                        Donec quis nisi non augue efficitur condimentum. In turpis nibh, venenatis ac vulputate quis,
+                        egestas eu mauris. Proin at leo risus. Nam ultrices ipsum ac tortor dapibus, vitae volutpat
+                        magna laoreet. Quisque sem ex, auctor eget tincidunt eu, aliquet vel libero. Duis sed urna
+                        efficitur, tristique nibh vitae, aliquet magna. Nam fermentum nisi sed vehicula tincidunt.
+                    </p>
+
+
+                    <a href="" class="btn-base pb-3">DESCARGAR BROCHURE
+                        <span class="btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+
+                </div>
+
+                <div class="col-12 col-xl-6">
+                    <img class="img-full" src="../assets/img/projects/rm-falcon-5840/rm-falcon-living.webp">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Gallery Images -->
+
+    <div class="section-container bkg-light-grey">
+        <h3 class="subtitle text-center pb-3" data-aos="fade-up"><span class="fancy-underline">IMAGENES</span></h3>
+
+        <div class="slick-slider-gallery">
+
+            <div class="slider-item"><a class="lightbox-link"
+                    href="../assets/img/projects/rm-falcon-5840/imagenes/rm-falcon-balcon.webp" data-lightbox="roma-635"
+                    data-title="Ramon Falcon 5840"><img
+                        src="../assets/img/projects/rm-falcon-5840/imagenes-grilla/rm-falcon-balcon.webp"
+                        alt="Ramon Falcon 5840"></a></div>
+            <div class="slider-item"><a class="lightbox-link"
+                    href="../assets/img/projects/rm-falcon-5840/imagenes/rm-falcon-balcon2.webp"
+                    data-lightbox="roma-635" data-title="ramon-falcon5840"><img
+                        src="../assets/img/projects/rm-falcon-5840/imagenes-grilla/rm-falcon-balcon2.webp"
+                        alt="Ramon Falcon 5840"></a>
+            </div>
+            <div class="slider-item"><a class="lightbox-link"
+                    href="../assets/img/projects/rm-falcon-5840/imagenes/rm-falcon-building.webp"
+                    data-lightbox="roma-635" data-title="ramon-falcon5840"><img
+                        src="../assets/img/projects/rm-falcon-5840/imagenes-grilla/rm-falcon-building.webp"
+                        alt="Ramon Falcon 5840"></a>
+            </div>
+            <div class="slider-item"><a class="lightbox-link"
+                    href="../assets/img/projects/rm-falcon-5840/imagenes/rm-falcon-dormitorio.webp"
+                    data-lightbox="roma-635" data-title="ramon-falcon5840"><img
+                        src="../assets/img/projects/rm-falcon-5840/imagenes-grilla/rm-falcon-dormitorio.webp"
+                        alt="Ramon Falcon 5840"></a>
+            </div>
+            <div class="slider-item"><a class="lightbox-link"
+                    href="../assets/img/projects/rm-falcon-5840/imagenes/rm-falcon-living.webp" data-lightbox="roma-635"
+                    data-title="ramon-falcon5840"><img
+                        src="../assets/img/projects/rm-falcon-5840/imagenes-grilla/rm-falcon-living.webp"
+                        alt="Ramon Falcon 5840"></a>
+            </div>
+            <div class="slider-item"><a class="lightbox-link"
+                    href="../assets/img/projects/rm-falcon-5840/imagenes/rm-falcon-living2.webp"
+                    data-lightbox="roma-635" data-title="ramon-falcon5840"><img
+                        src="../assets/img/projects/rm-falcon-5840/imagenes-grilla/rm-falcon-living2.webp"
+                        alt="Ramon Falcon 5840"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!------------------------------ Planos Isotope Grid Filter ------------------------------>
+
+    <div class="section-container bkg-light-grey">
+        <h3 class="subtitle text-center pb-3" data-aos="fade-up"><span class="fancy-underline">PLANOS</span></h3>
+
+        <div class="filters filter-button-group d-flex justify-content-center" data-aos="fade-up">
+            <ul class="">
+                <button class="filter-button" data-filter="*">Todos</button>
+                <button class="filter-button" data-filter=".pb">Planta Baja</button>
+                <button class="filter-button" data-filter=".pt">Planta Tipo</button>
+                <button class="filter-button" data-filter=".9-11">9° y 11° Piso</button>
+                <button class="filter-button" data-filter=".10-12">10° y 12° Piso</button>
+                <button class="filter-button" data-filter=".13">13° Piso</button>
+            </ul>
+
+        </div>
+
+        <div class="isotope-grid">
+            <div class="row row-isotope">
+
+                <!-- Planta Baja -->
+                <div class="col-12 col-md-6 col-xl-3 grid-item pb">
+                    <article>
+                        <img class="img-item" src="../assets/img/projects/rm-falcon-5840/planos-grilla/rm-falcon-5840-pb-grilla.webp" alt="Planta Baja">
+                        <h2 class="project-title mb-2"><b>Planta Baja</b></h2>
+
+                        <a class="lightbox-link btn-base" href="../assets/img/projects/rm-falcon-5840/planos/rm-falcon-5840-pb.webp" data-lightbox="rm-falcon-5840"
+                            data-title="Ramon Falcon 5840 Plano Planta Baja">
+                            VER PLANO
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Planta Tipo -->
+                <div class="col-12 col-md-6 col-xl-3 grid-item pt">
+                    <article>
+                        <img class="img-item" src="../assets/img/projects/rm-falcon-5840/planos-grilla/rm-falcon-5840-1-8-piso-tipo-grilla.webp" alt="Ramon Falcon 5840 Plano Planta Tipo">
+                        <h2 class="project-title mb-2"><b>Planta Tipo</b></h2>
+                        <a class="lightbox-link btn-base" href="../assets/img/projects/rm-falcon-5840/planos/rm-falcon-5840-1-8-piso-tipo.webp" data-lightbox="rm-falcon-5840"
+                            data-title="Ramon Falcon 5840 Plano Planta Tipo">
+                            VER PLANO
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- 9° y 11 Piso -->
+                <div class="col-12 col-md-6 col-xl-3 grid-item 9-11">
+                    <article>
+                        <img class="img-item" src="../assets/img/projects/rm-falcon-5840/planos-grilla/rm-falcon-5840-piso-9-11.webp" alt="Ramon Falcon 5840 Plano 4° Piso">
+                        <h2 class="project-title mb-2"><b>Planta 9° y 11° Piso</b></h2>
+
+                        <a class="lightbox-link btn-base" href="../assets/img/projects/rm-falcon-5840/planos/rm-falcon-5840-piso-9-11.webp" data-lightbox="rm-falcon-5840"
+                            data-title="Ramon Falcon 5840 Plano 4° Piso">
+                            VER PLANO
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- 10° y 12 Piso -->
+                <div class="col-12 col-md-6 col-xl-3 grid-item 10-12">
+                    <article>
+                        <img class="img-item" src="../assets/img/projects/rm-falcon-5840/planos-grilla/rm-falcon-5840-piso-10-12.webp" alt="Ramon Falcon 5840 Plano 4° Piso">
+                        <h2 class="project-title mb-2"><b>Planta 10° y 12° Piso</b></h2>
+
+                        <a class="lightbox-link btn-base" href="../assets/img/projects/rm-falcon-5840/planos/rm-falcon-5840-10-12.webp" data-lightbox="rm-falcon-5840"
+                            data-title="Ramon Falcon 5840 Planta 10° y 12° Piso">
+                            VER PLANO
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Piso 13 -->
+                <div class="col-12 col-md-6 col-xl-3 grid-item 13">
+                    <article>
+                        <img class="img-item"
+                            src="../assets/img/projects/rm-falcon-5840/planos-grilla/rm-falcon-5840-13piso.webp"
+                            alt="Ramon Falcon 5840 Plano Azotea">
+                        <h2 class="project-title mb-2"><b>Planta 13° Piso</b></h2>
+
+                        <a class="lightbox-link btn-base"
+                            href="../assets/img/projects/rm-falcon-5840/planos/rm-falcon-5840-13piso.webp"
+                            data-lightbox="rm-falcon-5840" data-title="Ramon Falcon 5840 Plano Azotea">
+                            VER PLANO
+                            <span class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
+                        </a>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="section-container bkg-light-grey">
+        <h3 class="subtitle text-center" data-aos="fade-up"><span class="fancy-underline">ESPECIFICACIONES
+                TÉCNICAS</span></h3>
+
+        <div class="row pb-3">
+            <h3 class="subtitle pt-4" data-aos="fade-up">GENERAL</h3>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+
+                <div class="spec-title-container">
+                    <p class="spec-text">Pre instalación aire acondicionados</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Calefacción por radiadores</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Persianas eléctricas</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Puertas PVC con picaportes</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Cerraduras biométricas</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Aberturas PVC doble vidrio</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Pisos de madera</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Domótica</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Interiores de placard</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Persianas de aluminio</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Parrilla</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row pb-3">
+            <h3 class="subtitle pt-4" data-aos="fade-up">COCINA</h3>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+
+                <div class="spec-title-container">
+                    <p class="spec-text">Mesada de Silestone</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Horno elevado</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Anafe</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Lavaplatos panelable</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Heladera panelable</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Griferías FV</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Muebles a medida con cierre suave</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row pb-3">
+            <h3 class="subtitle pt-4" data-aos="fade-up">BAÑO</h3>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+
+                <div class="spec-title-container">
+                    <p class="spec-text">Válvula FV en baños</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Inodoros Ferrum con tapa</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Bidet Ferrum</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 spec-container" data-aos="fade-up">
+                <div class="spec-title-container">
+                    <p class="spec-text">Vanytoris a medida</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <h3 class="subtitle pt-5 text-center" data-aos="fade-up"><span class="fancy-underline">UBICACIÓN</span></h3>
+
+    </div>
+
+    <!-- Lefleat Map -->
+    <div id="map" data-aos="fade-up"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="row">
+
+                <!--div class="col-12 footer-item pb-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.6353776850087!2d-58.50180638481276!3d-34.638653480450515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b0f90372f1%3A0x291cbf71437ef511!2sCnel.%20Ram%C3%B3n%20L.%20Falc%C3%B3n%205117%2C%20C1407GTK%20CABA!5e0!3m2!1ses-419!2sar!4v1673131303890!5m2!1ses-419!2sar"
+                        width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div-->
+
+
+                <div class="col-12 footer-item">
+                    <img class="logo pb-3" src="../assets/img/logo-footer.svg" alt="">
+                </div>
+
+                <div class="col-12 col-xl-6 pb-3">
+                    <ul class="footer">
+                        <li class="footer-item"><a href="#">INICIO</a></li>
+                        <li class="footer-item"><a href="../projects.html">PROYECTOS</a></li>
+                        <li class="footer-item"><a href="#">NOSOTROS</a></li>
+                        <li class="footer-item"><a href="#">CONTACTO</a></li>
+                        <div class="footer-rrss">
+                            <a href="https://www.instagram.com/grupo.pills/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/people/Grupo-Pills/100063672235881/" target="_blank"><i
+                                    class="fa-brands fa-facebook footer-social"></i></a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="col-12">
+                    <ul class="footer-contact">
+                        <a href="https://www.google.com.ar/maps/place/Cnel.+Ram%C3%B3n+L.+Falc%C3%B3n+5117,+C1407GTK+CABA/@-34.6386535,-58.5018064,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc9b0f90372f1:0x291cbf71437ef511!8m2!3d-34.6386535!4d-58.4996177"
+                            target="_blank">
+                            <p class="">Ramón Falcón 5117, Departamento 8, CABA</p>
+                        </a>
+                        <a href="mailto:ventas@grupopills.com.ar" target="_blank">
+                            <p class="">ventas@grupopills.com.ar</p>
+                        </a>
+                        <a href="https://wa.me/5491123494049?text=Hola%20Grupo%20Pills,%20me%20contacto%20desde%20www.grupopills.com.ar,%20busco%20info%20sobre%20los%20proyectos"
+                            target="_blank">
+                            <p class="">+54 9 11 23494049</p>
+                        </a>
+                    </ul>
+                </div>
+
+                <hr class="footer-separator">
+
+            </div>
+        </div>
+
+        <div class="copy-container">
+            <img class="powered-logo" src="../assets/img/isologo-studio-krass.png" alt="">
+            <a href="https://www.studiokrass.com.ar" target="_blank">
+                <p class="powered">Powered By Studio Krass.</p>
+            </a>
+        </div>
+    </footer>
+
+    <!-- JQUERY 3.6.3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+        integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Isotope JS-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- AOS JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slick JS-->
+    <script src="../assets/js/slick.js"></script>
+    <!-- Lightbox2 JS-->
+    <script src="../assets/js/lightbox.js"></script>
+    <!-- Lefleat JS-->
+    <script src="../assets/js/leaflet.js"></script>
+    <!-- Popper JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Site Scripts -->
+    <script src="../scripts.js"></script>
+
+    <script>
+
+        let LeafIcon = L.Icon.extend({
+            options: {
+                iconSize: [48, 48],
+                popupAnchor: [0, -25]
+            }
+        });
+
+        var customIcon = new LeafIcon({ iconUrl: '../assets/img/custom-marker.png' });
+
+
+        let map = L.map('map', {
+            scrollWheelZoom: false
+        }
+        ).setView([-34.63, -58.50], 12);
+
+        let marker = L.marker([-34.64000059389059, -58.509175444469825], { icon: customIcon }).addTo(map);
+
+        marker.bindPopup("<b>Ramon Falcon 5840</b><br>Departamento PH en Venta, Ubicado en Versalles, 3 Ambientes Caba.").openPopup();
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script>
+
+
+</body>
+
+</html>
