@@ -396,7 +396,7 @@ strong {
 	box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 	-webkit-animation: slideInDown 0.3s ease-out;
 	-moz-animation: slideInDown 0.3s ease-out;
-	background-color: #f3f3f3;
+	background-color: #ffffff;
 	min-height: 70px;
 }
 
@@ -408,7 +408,7 @@ strong {
 	left: 0;
 	width: 100%;
 	min-height: 75px;
-	background: #f3f3f3;
+	background: #ffffff;
 	transition: 0.3s all;
 	z-index: 99;
 }
@@ -478,7 +478,7 @@ strong {
 	width: 100vw;
 	/*height: calc(100% - 60px);
 	height: calc(var(--vh, 1vh) * 100 - 60px);*/
-	background: #f3f3f3;
+	background: #ffffff;
 	padding: 15px 0;
 	z-index: 999;
 	box-shadow: 0px 5px 5px 0 rgb(0 0 0 / 0.05);
@@ -569,33 +569,6 @@ strong {
 	display: block;
 }
 
-.header .navigation .menu .menu-donate {
-	margin: 15px;
-}
-
-.header .navigation .menu .menu-donate a {
-	display: inline-block;
-	min-width: 134px;
-	padding: 6px 15px;
-	color: #000;
-	text-align: center;
-	background: #D6F74D;
-	border: 1px solid #D6F74D;
-	border-radius: 50px;
-}
-
-.header .navigation .menu .menu-donate a:hover {
-	background: #fff;
-	border-color: #fff;
-	color: #000;
-}
-
-.header .navigation .menu .menu-donate.current-menu-item a {
-	background: #000;
-	border-color: #D6F74D;
-	color: #D6F74D;
-}
-
 .header .navigation .socialmedia {
 	margin: 5px;
 }
@@ -679,7 +652,7 @@ strong {
 		left: 0;
 		width: 300px;
 		padding: 0;
-		background: #f3f3f3;
+		background: #ffffff;
 		box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.1);
 		z-index: 999;
 		text-align: left;
@@ -1186,27 +1159,41 @@ span.lb-number {
 	background-image: url(assets/img/projects/details-banners/roma-635-banner.webp);
 }
 
-/*** Roma 535 Project Detail ***/
+/*** Lascano 6031 Project Detail ***/
 .bkg-lascano-6031 {
 	background-image: url(assets/img/projects/details-banners/lascano-6031-banner.webp);
 }
 
-/*** Roma 535 Project Detail ***/
+/*** Ramon Falcon 5840 Project Detail ***/
 .bkg-rm-falcon-5840 {
 	background-image: url(assets/img/projects/details-banners/ramon-falcon-5840-banner.webp);
 }
 
-/*** Roma 535 Project Detail ***/
+/*** Ramon Falcon 5168 Project Detail ***/
 .bkg-rm-falcon-5168 {
 	background-image: url(assets/img/projects/details-banners/rm-falcon-5168-banner.webp);
 }
 
+/*** Ramon Falcon 5117 Project Detail ***/
+.bkg-rm-falcon-5117 {
+	background-image: url(assets/img/projects/details-banners/rm-falcon-5117-banner.webp);
+}
+
+/*** Ramon Falcon 5117 Project Detail ***/
+.bkg-oliden-1275 {
+	background-image: url(assets/img/projects/details-banners/oliden-1275-banner.webp);
+}
+
+/*** Ramon Falcon 5117 Project Detail ***/
+.bkg-miralla-316 {
+	background-image: url(assets/img/projects/details-banners/miralla-316-banner.webp);
+}
 
 
 
 /*Footer*/
 footer {
-	background-color: #f3f3f3;
+	background-color: #ffffff;
 	padding: 50px;
 	color: #484a57;
 	padding: 75px 75px 25px 75px;
